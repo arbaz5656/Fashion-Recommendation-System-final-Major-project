@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+      <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .person-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .person-card {
+            width: 200px;  
+            /* overflow: hidden; */
+            transition: transform 0.3s ease;
+        }
+
+        .person-card img {
+            width: 25vh;
+            height: 25vh;
+            border-radius: 50%;
+            /* height: auto; */
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .person-card:hover {
+            transform: scale(1.1);
+        }
+
+        h1 {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            margin-top: 10px;
+        }
+
+        .person-card.hovered {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+    <div class="container">
+                    <a href="index" style="text-decoration:none; color:white"><h1>Fashion Recommendation System</h1></a>
+        <div class="person-cards">
+            <div class="person-card">
+                <img src="{% static 'images/newton image.jpg' %}"
+                    alt="Person 1">
+                    <h2>Shaikh Ishaque</h2>
+                    <h4>shaikhishaque9812@gmail.com</h4>
+                    <p>B.E(Computer Science Engineering)Artificial Intelligence And Machine Learning. </p>
+            </div>
+            <div class="person-card">
+                <img src="{% static 'images/arbaz.jpg' %}" alt="Person 2">
+                <h2>Shaikh Arbaz</h2>
+                <h4>shaikharbaz18691@gmail.com</h4>
+                <p>B.E(Computer Science Engineering)Artificial Intelligence And Machine Learning. </p>
+            </div>
+            <div class="person-card">
+                <img style="object-position: 35% 45%;" src="{% static 'images/ahmed.jpg' %}" alt="Person 3">
+                <h2>Khan Ahmed Raza</h2>
+                <h4>ahmed810832@gmail.com</h4>
+                <p>B.E(Computer Science Engineering)Artificial Intelligence And Machine Learning. </p>
+            </div>
+            <div class="person-card">
+                <img style="object-position:top;" src="{% static 'images/salim.jpg' %}" alt="Person 4">
+                <h2>Salim Solanky</h2>
+                <h4 >solankysalim92@gmail.com</h4>
+                <p>B.E(Computer Science Engineering)Artificial Intelligence And Machine Learning. </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="about.js"></script>
+    <script src="{% static 'js/about.js' %}"></script>
+
+</body>
+
+</html>

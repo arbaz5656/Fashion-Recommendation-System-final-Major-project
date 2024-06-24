@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar-left h1 {
+    margin: 0;
+}
+
+.navbar-right button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.category, .sub-category {
+    text-align: center;
+    font-size: 2.7vw;
+    padding: 20px 0;
+}
+
+.card-container, .item-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card{
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+    height: 380px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 16px 0  rgba(0, 0, 0,.4);
+    /* overflow: hidden;s */
+}
+/* .card :hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    scale: 110%;
+    transition: alls;
+} */
+
+.card h3{
+    margin-bottom: 30px;
+}
+ .item-card {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0,.4);
+    /* padding: 20px; */
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    /* overflow: hidden; */
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.item-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    /* transition: cubic-bezier(0.645, 0.045, 0.355, 1) */
+}
+/* .item-card img:hover{
+   scale: 110%;
+} */
+
+hr {
+    margin-top: 30px;
+    border: none;
+    height: 1px;
+    background-color: #333;
+    margin: 20px 0;
+
+}
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .navbar-right {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-right button{
+        margin-top: 10px;
+    }
+    .card-container, .item-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+        .item-card {
+            width: 70%;
+        }
+    
+    
+}
+
